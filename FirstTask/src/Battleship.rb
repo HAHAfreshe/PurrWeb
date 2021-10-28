@@ -186,6 +186,15 @@ class Game
 
     def chek_user_input?(cord)
         cord = cord.gsub(' ', '')
+        if cord == "surrender"
+            puts `clear`
+            puts "What a shame…"
+            puts
+            @surrend = true
+            print_fields()
+            return nil
+        end
+
         if cord.match(/^[a-jA-J][1-9]0*$/)
             case cord.length
             when 2
@@ -202,22 +211,17 @@ class Game
     def user_input
         puts "Enter the coordinates of the ship:"
         cord = gets.chomp.downcase
-        if cord == "surrender"
-            puts `clear`
-            puts "What a shame…"
-            puts
-            @surrend = true
-            print_fields()
-            return nil
-        end
 
         loop do
-            if chek_user_input?(cord)
+            retCode = chek_user_input?(cord)
+            if retCode && retCode != nil
                 break
+            elsif retCode == nil
+                return nil
             end
             puts "Incorrect coordinate!"
             puts "\nEnter the coordinates of the ship:"
-            cord = gets.chomp
+            cord = gets.chomp.downcase
         end
 
         case cord.length
