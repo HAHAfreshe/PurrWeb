@@ -60,11 +60,11 @@ d3
 
 1. Создайте образ docker:
 ```sh
-docker build -t battleship .  
+docker build -t battleships .  
 ```
 2. Запустите созданный образ:
 ```sh
-docker run -it my-ruby-app
+docker run -it battleships
 ```
 
 <i>При ошибке "Got permission denied" запускайте команды от имени суперпользователя</i>

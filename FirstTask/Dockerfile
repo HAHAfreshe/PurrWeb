@@ -7,4 +7,4 @@ RUN bundle install
 
 COPY src/Battleship.rb ./
 
-CMD ["ruby", "./Battleship.rb"]
+CMD ["ruby", "Battleship.rb"]
