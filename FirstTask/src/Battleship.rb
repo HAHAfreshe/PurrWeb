@@ -345,6 +345,7 @@ class Game
     end
 end
 
+trap("INT") {puts "\nBye!"; exit} # отлавливание выхода
 
 g = Game.new # создание экземпляра класса Game
 g.start_game # запуск игры
