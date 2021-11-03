@@ -5,6 +5,6 @@ WORKDIR /usr/src/app
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
-COPY src/Battleship.rb ./
+COPY src/battleships.rb ./
 
-CMD ["ruby", "Battleship.rb"]
+CMD ["ruby", "battleships.rb"]
