@@ -1,6 +1,6 @@
 # Trello API
 
-## Оглавление
+### Оглавление
 1. [Задача](#Задача)
 2. [Сущности](#Сущности)
 3. [Требования](#Требования)
@@ -12,7 +12,9 @@
 6. [Структура бд](#Структура-бд)
 
 ### Задача
-Создать RESTful API с авторизацией для Trello на Ruby on Rails.Спроектировать структуру БД при помощи dbdiagram.io
+Создать RESTful API с авторизацией для Trello на Ruby on Rails.
+
+Спроектировать структуру БД при помощи dbdiagram.io
 
 ### Сущности
 - пользователь
@@ -129,26 +131,3 @@ DELETE /comments/:comment_id
 ### Структура бд
 [Диаграмма в dbdiagram.io](https://dbdiagram.io/d/6182e452d5d522682df773ae)
 ![db](db/database.png)
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
