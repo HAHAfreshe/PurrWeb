@@ -37,7 +37,6 @@
 
 #### Пакеты
 - postgresql => 13.4
-- ruby => 3.0.2
 - docker => 20.10.10
 - docker-compose => 2.1.1
 
